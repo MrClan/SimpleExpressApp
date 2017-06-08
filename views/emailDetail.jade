@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h4 Email Detail for #{em.id}
+    p
+        | subject =
+        b= em.subject
+        br
+        | received data =
+        code= em.recData
+        br
+        | sender =
+        i= em.sender
+    a(href="/emails") Back

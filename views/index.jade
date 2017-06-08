@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title Form
+  body
+    #content
+      form(method="post")
+        .block
+          label(for="txtImap")
+            | Imap Address
+          input(name="txtImap",type="text", placeholder="imap address")
+        .block
+          label(for="txtPort")
+            | Port No.
+          input(name="txtPort",type="number", placeholder="port no.")
+        .block
+          label(for="txtEmail")
+            | Email Address
+          input(name="txtEmail",type="email", placeholder="email address")
+        .block
+          label(for="txtPwd")
+            | Password
+          input(name="txtPwd",type="password", placeholder="password")
+        hr
+        button(type="submit", value="Submit")
+          | Submit

@@ -1,0 +1,18 @@
+extends layout.jade
+block content
+  h4 Email List
+  table(id='tblEmails')
+    thead
+      td S.No.
+      td Subject
+      td Received Data
+      td Sender
+    tbody
+      each d,i in data
+        tr
+          td=d.id
+          td
+            a(href=('/detail/'+d.id))= d.subject
+          td= d.recData
+          td= d.sender
+  hr
